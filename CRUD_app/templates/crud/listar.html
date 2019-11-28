@@ -1,0 +1,30 @@
+{% extends 'crud/base.html' %}
+
+{% block content %}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Função</th>
+            <th scope="col">Salário</th>
+            <th scope="col">Ação</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for dados in funcionarios %}
+        <tr>
+            <td>{{dados.nome}}</td>
+            <td>{{dados.sexo}}</td>
+            <td>{{dados.funcao}}</td>
+            <td>{{dados.salario}}</td>
+            <td>
+                <a href="{% url 'editar' pk=dados.id %}"><i class="fas fa-edit" style="color: #007bff;"></i></a>
+                <a href="{% url 'excluir' pk=dados.id %}"><i class="fas fa-trash" style="color: #dc3545;"></i></a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

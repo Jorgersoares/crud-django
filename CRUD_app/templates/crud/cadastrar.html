@@ -1,0 +1,45 @@
+{% extends 'crud/base.html' %}
+
+{% block content %}
+{% load widget_tweaks %}
+<div class="card m-2">
+    <div class="card-body">
+        <h5 class="card-title text-center">Cadastrar Funcionario</h5>
+
+        <form method="POST">
+            {% csrf_token %}
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Nome</span>
+                </div>
+                {% render_field form.nome class+="form-control" %}
+            </div>
+
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Sexo</label>
+                </div>
+                {% render_field form.sexo class+="custom-select" %}
+            </div>
+
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Função</span>
+                </div>
+                {% render_field form.funcao class+="form-control" %}
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Salário</span>
+                </div>
+                {% render_field form.salario class+="form-control" %}
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Cadastrar</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
