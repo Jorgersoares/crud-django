@@ -4,5 +4,5 @@
 ####    de criação de uma aplicação web com Python e Django durante o evento IFTECH, realizado no IFPB.
 
 #### Minicurso ministrado por:
-#### Carlos Manoel Nunes
-#### Jorge Ricardo Soares
+####  - Carlos Manoel Nunes
+####  - Jorge Ricardo Soares
