@@ -1,9 +1,14 @@
 # CRUD_Django
-Prática do minicurso em Django ministrado durante a semana de tecnologia(IFTECH) do IFPB Campus João Pessoa
+Neste repositório consta a aplicação que foi implementada durante o minicurso 
+de criação de uma aplicação web com Python e Django durante o evento IFTECH, realizado no IFPB.
 
-# SETUP
+##### Minicurso ministrado por:
+  - Carlos Manoel Nunes
+  - Jorge Ricardo Soares
 
-#### INSTALE O PIP SE AINDA NÃO TEM
+#### SETUP
+
+##### INSTALE O PIP SE AINDA NÃO TEM
 
 ##### execute:
 - pip install -r requirements.txt
